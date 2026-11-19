@@ -5,11 +5,12 @@ public class PlayerController : MonoBehaviour
 {
     private float elapsedTime = 0f;
     private float score = 0f;
+ 
 
     public float scoreMultiplier = 10f;
     public float thrustForce = 1f;
     public float maxSpeed = 5f;
-
+    private Button restartButton;
 
     Rigidbody2D rb;
 
@@ -21,6 +22,8 @@ public class PlayerController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         scoreText = uiDocument.rootVisualElement.Q<Label>("ScoreLabel");
+        restartButton = uiDocument.rootVisualElement.Q<Button>("RestartButton");
+        restartButton.style.display = DisplayStyle.None;
     }
 
     void Update()
@@ -49,10 +52,11 @@ public class PlayerController : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-       
 
-        Instantiate(explosionEffect, transform.position, transform.rotation);
+
         Destroy(gameObject);
+        Instantiate(explosionEffect, transform.position, transform.rotation);
+        restartButton.style.display = DisplayStyle.Flex;
     }
 
 }

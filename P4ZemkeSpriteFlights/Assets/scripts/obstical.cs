@@ -4,9 +4,9 @@ public class obstical : MonoBehaviour
 {
     public float maxSpinSpeed = 10f;
     public float minSize = 0.5f;
-    public float maxSize = 1.5f;
-    public float minSpeed = 60f;
-    public float maxSpeed = 5f;
+    public float maxSize = 1f;
+    public float minSpeed = 50f;
+    public float maxSpeed = 150f;
 
     Rigidbody2D rb;
 
