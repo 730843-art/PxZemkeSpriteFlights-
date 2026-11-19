@@ -254,11 +254,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9196656612871282542, guid: ba5c433c50cdaeb4ca50af68bc8f3ffc, type: 3}
       propertyPath: m_LocalScale.x
-      value: -2.0095599
+      value: -2.0095596
       objectReference: {fileID: 0}
     - target: {fileID: 9196656612871282542, guid: ba5c433c50cdaeb4ca50af68bc8f3ffc, type: 3}
       propertyPath: m_LocalScale.y
       value: 2.2946095
+      objectReference: {fileID: 0}
+    - target: {fileID: 9196656612871282542, guid: ba5c433c50cdaeb4ca50af68bc8f3ffc, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9196656612871282542, guid: ba5c433c50cdaeb4ca50af68bc8f3ffc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -266,7 +270,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9196656612871282542, guid: ba5c433c50cdaeb4ca50af68bc8f3ffc, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.43
+      value: -0.43000004
       objectReference: {fileID: 0}
     - target: {fileID: 9196656612871282542, guid: ba5c433c50cdaeb4ca50af68bc8f3ffc, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2326,6 +2330,7 @@ MonoBehaviour:
   thrustForce: 1
   maxSpeed: 5
   uiDocument: {fileID: 10766249}
+  explosionEffect: {fileID: 5835589441555931925, guid: 8581bd6c939474e4dbe7d62f06261ce9, type: 3}
 --- !u!1001 &2018409907
 PrefabInstance:
   m_ObjectHideFlags: 0
